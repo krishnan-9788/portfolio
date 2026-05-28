@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Krishnan S A — AI/ML Engineer & Full Stack Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NOISE OVERLAY -->
+  <div class="noise"></div>
+
+  <!-- TOAST NOTIFICATION -->
+  <div id="toast" class="toast">Message sent successfully! We will connect soon.</div>
+
+  <!-- ── NAVBAR ── -->
+  <nav id="navbar">
+    <a href="#home" class="nav-brand">
+      <svg class="brand-logo-svg" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M30 35L15 50L30 65" stroke="#f05423" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M70 35L85 50L70 65" stroke="#f05423" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+        <circle cx="50" cy="50" r="12" fill="#0f2b5c"/>
+        <circle cx="50" cy="50" r="6" fill="#f05423"/>
+        <line x1="30" y1="50" x2="44" y2="50" stroke="#0f2b5c" stroke-width="4" stroke-dasharray="2 2"/>
+        <line x1="70" y1="50" x2="56" y2="50" stroke="#0f2b5c" stroke-width="4" stroke-dasharray="2 2"/>
+      </svg>
+      <span>KRISH</span><span class="brand-sub">.DEV</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#home" data-nav>Home</a></li>
+      <li><a href="#about" data-nav>About Me</a></li>
+      <li><a href="#skills" data-nav>Technical Skills</a></li>
+      <li><a href="#projects" data-nav>Projects</a></li>
+      <li><a href="#certificates" data-nav>Why Choose Us</a></li>
+      <li><a href="#contact" data-nav>Contact Me</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobile-menu">
+    <ul>
+      <li><a href="#home" class="mob-link">Home</a></li>
+      <li><a href="#about" class="mob-link">About Me</a></li>
+      <li><a href="#skills" class="mob-link">Technical Skills</a></li>
+      <li><a href="#projects" class="mob-link">Projects</a></li>
+      <li><a href="#certificates" class="mob-link">Why Choose Us</a></li>
+      <li><a href="#contact" class="mob-link">Contact Me</a></li>
+    </ul>
+  </div>
+
+  <!-- ── HERO SECTION ── -->
+  <section id="home">
+    <div class="container hero-container">
+      <div class="hero-left" data-reveal>
+        <span class="hero-tag">INTELLIGENT SYSTEMS · HUMAN-CENTRIC DESIGN</span>
+        <h1 class="hero-heading">
+          Your Visual AI Future, <br>
+          <span class="accent-text">Our Expertise</span>
+        </h1>
+        <p class="hero-bio">
+          CS undergrad building AI-powered real-world systems — from traffic intelligence to healthcare safety platforms. Proficient in REST API design, prompt engineering, scalable backend architecture, and bridging the gap between research and production-ready code.
+        </p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">See My Projects</a>
+          <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+        </div>
+      </div>
+      <div class="hero-right" data-reveal>
+        <div class="logo-showcase-container">
+          <svg class="hero-bullseye-svg" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="20" y="20" width="160" height="160" rx="40" stroke="#0f2b5c" stroke-width="4" stroke-dasharray="8 8" stroke-opacity="0.3"/>
+            <path d="M60 60L100 40L140 60L160 100L140 140L100 160L60 140L40 100L60 60Z" stroke="#0f2b5c" stroke-width="3" stroke-opacity="0.5"/>
+            <path d="M60 60L100 100M140 60L100 100M140 140L100 100M60 140L100 100" stroke="#f05423" stroke-width="2" stroke-opacity="0.3"/>
+            <circle cx="100" cy="100" r="28" fill="#0f2b5c" filter="drop-shadow(0 8px 16px rgba(15,43,92,0.2))"/>
+            <circle cx="100" cy="100" r="14" fill="#f05423"/>
+            <circle cx="60" cy="60" r="10" fill="#0f2b5c"/>
+            <circle cx="60" cy="60" r="5" fill="#ffffff"/>
+            <circle cx="140" cy="60" r="10" fill="#f05423"/>
+            <circle cx="140" cy="140" r="10" fill="#0f2b5c"/>
+            <circle cx="140" cy="140" r="5" fill="#ffffff"/>
+            <circle cx="60" cy="140" r="10" fill="#f05423"/>
+            <path d="M96 95L92 100L96 105" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M104 95L108 100L104 105" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <div class="hero-brand-card">
+            <span class="card-brand-name">KRISHNAN S A</span>
+            <span class="card-brand-tag">AI/ML & Full-Stack Developer</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── ABOUT (VISIONARY DEVELOPER STYLE) ── -->
+  <section id="about">
+    <div class="container">
+      <div class="about-layout">
+        <div class="about-left" data-reveal>
+          <span class="sec-subtitle">WHO I AM</span>
+          <h2 class="about-title">Our Visionary Developer</h2>
+          <div class="about-content">
+            <p>Motivated Computer Science undergraduate at <strong>Sri Shakthi Institute of Engineering and Technology (2024–2028, CGPA: 7.6)</strong> passionate about Artificial Intelligence, Machine Learning, Generative AI, Computer Vision, and Full Stack Development.</p>
+            <p>I build AI-powered real-time applications — from smart surveillance systems and medication safety platforms to intelligent automation tools — using <strong>Python, Flask, FastAPI, OpenCV, and the MERN stack</strong>.</p>
+            <p>Proficient in REST API integration, prompt engineering, and scalable backend architecture. Targeting AI/ML Engineer and Software Developer roles, ready to solve real-world problems through technology.</p>
+          </div>
+        </div>
+        <div class="about-right" data-reveal>
+          <div class="portrait-frame">
+            <div class="portrait-overlay"></div>
+            <svg class="portrait-avatar-svg" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="200" height="200" rx="20" fill="#eef3fa"/>
+              <!-- Custom Developer Avatar SVG -->
+              <circle cx="100" cy="75" r="30" fill="#0f2b5c"/>
+              <path d="M50 145C50 125.118 66.1177 109 86 109H114C133.882 109 150 125.118 150 145V165H50V145Z" fill="#f05423"/>
+              <!-- Screen representation in vector -->
+              <rect x="70" y="140" width="60" height="35" rx="4" fill="#ffffff" filter="drop-shadow(0 2px 4px rgba(0,0,0,0.15))"/>
+              <path d="M78 148H122" stroke="#0f2b5c" stroke-width="2" stroke-linecap="round"/>
+              <path d="M78 154H110" stroke="#0f2b5c" stroke-width="2" stroke-linecap="round"/>
+              <path d="M78 160H95" stroke="#f05423" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+            <div class="portrait-caption">
+              <h4>Krishnan S A</h4>
+              <p>Computer Science Undergrad (2024–2028)</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── STATISTICS BANNER ── -->
+  <section class="stats-banner" id="stats">
+    <div class="container stats-container">
+      <div class="stat-item">
+        <span class="stat-number" data-target="7">7</span><span class="stat-suffix">.6</span>
+        <span class="stat-label">ACADEMIC CGPA</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-number" data-target="3">0</span><span class="stat-plus">+</span>
+        <span class="stat-label">AI / ML PROJECTS</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-number" data-target="4">0</span><span class="stat-plus">+</span>
+        <span class="stat-label">PROFESSIONAL CERTIFICATIONS</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── SERVICES (SKILLS / EXPERTISE STYLE) ── -->
+  <section id="skills">
+    <div class="container">
+      <div class="skills-layout">
+        <div class="skills-left" data-reveal>
+          <div class="illustration-frame">
+            <svg class="expertise-illustration-svg" viewBox="0 0 400 350" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="20" y="20" width="360" height="310" rx="16" fill="#ffffff" filter="drop-shadow(0 20px 40px rgba(15,43,92,0.06))"/>
+              <rect x="50" y="220" width="300" height="80" rx="12" fill="#eef3fa"/>
+              
+              <!-- Growth Chart Graph representing coding metrics -->
+              <path d="M80 180L140 130L200 150L260 90L320 110" stroke="#1565c0" stroke-width="4" stroke-linecap="round"/>
+              <circle cx="80" cy="180" r="6" fill="#1565c0"/>
+              <circle cx="140" cy="130" r="6" fill="#1565c0"/>
+              <circle cx="200" cy="150" r="6" fill="#1565c0"/>
+              <circle cx="260" cy="90" r="6" fill="#1565c0"/>
+              <circle cx="320" cy="110" r="6" fill="#f05423"/>
+              
+              <!-- Magnifying glass, Checklist indicators, Shield -->
+              <circle cx="100" cy="260" r="20" fill="#ffffff" filter="drop-shadow(0 4px 10px rgba(0,0,0,0.05))"/>
+              <circle cx="200" cy="260" r="20" fill="#ffffff" filter="drop-shadow(0 4px 10px rgba(0,0,0,0.05))"/>
+              <circle cx="300" cy="260" r="20" fill="#ffffff" filter="drop-shadow(0 4px 10px rgba(0,0,0,0.05))"/>
+              
+              <!-- Checkmarks representing key stacks -->
+              <path d="M92 260L97 265L108 255" stroke="#2e7d32" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M192 260L197 265L208 255" stroke="#2e7d32" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M292 260L297 265L308 255" stroke="#2e7d32" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+              
+              <!-- Target Badge -->
+              <circle cx="330" cy="60" r="25" fill="#f05423" fill-opacity="0.1"/>
+              <circle cx="330" cy="60" r="12" fill="#f05423"/>
+            </svg>
+          </div>
+        </div>
+        <div class="skills-right" data-reveal>
+          <span class="sec-subtitle">TECHNICAL STACK</span>
+          <h2 class="skills-title">Overview Of Expertise</h2>
+          <p class="skills-intro">
+            A comprehensive overview of programming languages, machine learning architectures, modern framework libraries, and software engineering tools in my daily stack.
+          </p>
+          
+          <div class="skill-category-list">
+            <div class="skill-cat-card">
+              <span class="cat-bullet">💻</span>
+              <div class="cat-body">
+                <h4>Programming Languages</h4>
+                <p>Python, Java, JavaScript, C, HTML & CSS, MongoDB (Query)</p>
+              </div>
+            </div>
+            
+            <div class="skill-cat-card">
+              <span class="cat-bullet">👁️</span>
+              <div class="cat-body">
+                <h4>AI / ML & Generative AI</h4>
+                <p>Machine Learning, Model Training & Evaluation, Computer Vision, Prompt Engineering, LLMs, OpenCV, MediaPipe, Scikit-learn</p>
+              </div>
+            </div>
+            
+            <div class="skill-cat-card">
+              <span class="cat-bullet">⚡</span>
+              <div class="cat-body">
+                <h4>Libraries & Frameworks</h4>
+                <p>Flask, FastAPI, NumPy, Twilio, React.js, Express.js, Node.js</p>
+              </div>
+            </div>
+
+            <div class="skill-cat-card">
+              <span class="cat-bullet">🛠️</span>
+              <div class="cat-body">
+                <h4>CS Core & Developer Tools</h4>
+                <p><strong>Core</strong>: DSA, OOP, DBMS, Operating Systems, Computer Networks, System Design <br><strong>Tools</strong>: Git & GitHub, VS Code, MySQL Workbench, Google Colab, REST APIs</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── PROJECTS SECTION ── -->
+  <section id="projects">
+    <div class="container">
+      <span class="sec-subtitle">03 / PROJECTS</span>
+      <h2 class="sec-title">What I've Built</h2>
+
+      <div class="projects-grid">
+        <!-- Project 1: Automated Traffic Violation System -->
+        <article class="project-card" data-reveal>
+          <div class="project-body">
+            <span class="project-num">01</span>
+            <h3>Automated Traffic Violation Detection</h3>
+            <p class="project-subtitle">AI-Powered Real-Time Traffic Monitoring & Violation Management</p>
+            <p class="project-desc">Full-stack AI traffic violation detection system monitoring helmet violations, triple riding, and mobile phone usage via a single live camera feed.</p>
+            
+            <ul class="project-bullet-points">
+              <li>Flask backend integrated with OpenCV and YOLOv8 for real-time vehicle and rider detection through an AI-ready architecture.</li>
+              <li>Intelligent violation analysis module with automatic detection of No Helmet, Triple Riding, and Phone Usage — with evidence image capture.</li>
+              <li>PaddleOCR-based number plate recognition system for extracting vehicle registration details from captured traffic evidence.</li>
+              <li>SQLite database integration for efficient storage and management of traffic violation records and smart surveillance enhancements.</li>
+              <li>Responsive admin dashboard for viewing violation records, evidence images, timestamps, and fine details.</li>
+            </ul>
+
+            <div class="project-tech-tags">
+              <span>Python</span><span>Flask</span><span>OpenCV</span><span>YOLOv8</span><span>PaddleOCR</span><span>SQLite</span><span>REST API</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 2: MediSafeAI -->
+        <article class="project-card" data-reveal>
+          <div class="project-body">
+            <span class="project-num">02</span>
+            <h3>MediSafeAI</h3>
+            <p class="project-subtitle">AI-Based Medication Combination Checker System</p>
+            <p class="project-desc">Full-stack AI healthcare safety system for detecting harmful medicine combinations in real time using lightweight compound interest predictive models.</p>
+            
+            <ul class="project-bullet-points">
+              <li>Intelligent drug interaction prediction with risk-level classification: Safe, Moderate, and Dangerous.</li>
+              <li>Lightweight REST API communication between frontend and Flask backend using JavaScript Fetch API.</li>
+              <li>Modular AI model integration with placeholder model.pkl, enabling seamless future ML deployment.</li>
+              <li>Future-ready framework supporting OCR medicine scanning, voice input, and multi-drug analysis.</li>
+            </ul>
+            
+            <div class="project-tech-tags">
+              <span>Python</span><span>Flask</span><span>Scikit-learn</span><span>HTML/CSS/JS</span><span>REST API</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 3: Client Project Showcase (MyFundz Wealth Platform) -->
+        
+      </div>
+    </div>
+  </section>
+
+  <!-- ── WHY CHOOSE US (CREDENTIALS) ── -->
+  <section id="certificates">
+    <div class="container">
+      <span class="sec-subtitle">CREDENTIALS & TRUST</span>
+      <h2 class="sec-title">Why Choose Us</h2>
+
+      <div class="certs-grid">
+        <div class="cert-card" data-reveal>
+          <div class="cert-icon-box google">GC</div>
+          <div class="cert-desc-box">
+            <span class="cert-authority">GOOGLE CLOUD</span>
+            <h4>Generative AI Essentials</h4>
+            <p>Comprehensive training on Large Language Models, prompt tuning, and building generative AI applications.</p>
+          </div>
+        </div>
+
+        <div class="cert-card" data-reveal>
+          <div class="cert-icon-box microsoft">MS</div>
+          <div class="cert-desc-box">
+            <span class="cert-authority">MICROSOFT</span>
+            <h4>AI Essentials & Machine Learning</h4>
+            <p>Covering predictive algorithm deployment, ethics in AI models, and life-cycle deployment pipelines.</p>
+          </div>
+        </div>
+
+        <div class="cert-card" data-reveal>
+          <div class="cert-icon-box accenture">AC</div>
+          <div class="cert-desc-box">
+            <span class="cert-authority">ACCENTURE</span>
+            <h4>UI/UX Design Skills</h4>
+            <p>Human-centered design principles, digital wireframing, client user flows, and usability reviews.</p>
+          </div>
+        </div>
+
+        <div class="cert-card" data-reveal>
+          <div class="cert-icon-box prodigy">PI</div>
+          <div class="cert-desc-box">
+            <span class="cert-authority">PRODIGY INFOTECH</span>
+            <h4>Full-Stack Web Internship</h4>
+            <p>Practical deployment of lightweight corporate products, responsive web grids, and script optimization.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="symposium-banner" data-reveal>
+        <span class="symp-trophy">🏆</span>
+        <div class="symp-txt">
+          <h4>ASTRANOVA — National Technical Symposium</h4>
+          <p>Participated in core technical presentations at Coimbatore Institute of Technology.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── TESTIMONIALS (CLIENT FEEDBACK) ── -->
+  <section class="testimonial-section">
+    <div class="container">
+      <span class="sec-subtitle">CLIENT FEEDBACK</span>
+      <div class="testimonial-container" data-reveal>
+        <p class="testimonial-text">
+          "As a layman in the field I always felt the need for financial literacy and guidance which I started working on through you tube channels, news paper articles and colleagues advises but ended in mishaps, I was deeply worried for the financial insecurities not planning for a retirement life until I met you regarding the financial services you always had the customers personalized plans not threatening or burdening but clearly stably brought the habit of saving.. you were always kind and polite even to my craziest doubts.. repeated doubts and always guided me in needed moments I appreciate your commitment round the clock attending to the calls despite ur busy schedule and brought confidence in me.. truly appreciate your painstaking efforts and wishing you good health and wellness and happiness in your chosen career, blessed to have you."
+        </p>
+        <h4 class="testimonial-author">DR. PARIMALA</h4>
+        <span class="author-title">Premium Investor</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CTA BANNER ── -->
+  <section class="cta-banner">
+    <div class="container cta-container" data-reveal>
+      <h2>Ready to Build Your AI Future?</h2>
+      <p>Struggling With Advanced Algorithms, Systems Integration, Or Scalable Web Dev?</p>
+      <p class="cta-sub">Whether You're Bootstrapping a Startup Or Expanding Enterprise Capabilities, Let's Architect the Right Solution Today.</p>
+      <a href="#contact" class="btn btn-white">Let's Talk Today</a>
+    </div>
+  </section>
+
+  <!-- ── CONTACT ME (QUICK INQUIRY FORM) ── -->
+  <section id="contact">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-left" data-reveal>
+          <div class="contact-portrait-box">
+            <svg class="portrait-avatar-svg" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="200" height="200" rx="20" fill="#eef3fa"/>
+              <!-- Custom Developer Headshot Vector -->
+              <circle cx="100" cy="75" r="32" fill="#0f2b5c"/>
+              <path d="M40 150C40 126.804 56.804 110 80 110H120C143.196 110 160 126.804 160 150V175H40V150Z" fill="#f05423"/>
+            </svg>
+            <div class="contact-rep-info">
+              <h3>Krishnan S A</h3>
+              <p>AI/ML & Full-Stack Engineer</p>
+              <p class="rep-tag">Sri Shakthi Institute of Engineering & Technology</p>
+            </div>
+          </div>
+          <div class="quick-contact-details">
+            <a href="tel:+917397606621" class="qc-item">
+              <span class="qc-icon">📞</span>
+              <div>
+                <span class="qc-lbl">Call Me</span>
+                <span class="qc-val">+91 73976 06621</span>
+              </div>
+            </a>
+            <a href="mailto:krishnancs2006@gmail.com" class="qc-item">
+              <span class="qc-icon">✉️</span>
+              <div>
+                <span class="qc-lbl">Email Address</span>
+                <span class="qc-val">krishnancs2006l@gmail.com</span>
+              </div>
+            </a>
+            <div class="qc-cta-box">
+              <h4>Want a Project Like This?</h4>
+              <p>Whether you need a custom AI integration, software automation, or a high-fidelity web platform — let's build it.</p>
+              <a href="tel:+917397606621" class="btn btn-primary btn-full call-me-btn">
+                📞 Call Me Now
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="contact-right" data-reveal>
+          <span class="sec-subtitle">GET IN TOUCH</span>
+          <h2 class="contact-form-title">"Need Help?" – Quick Inquiry</h2>
+          <p class="contact-form-intro">Struggling With EMIs, AI integrations, web deployment, or need custom platforms built? Send a quick message below.</p>
+          
+          <form class="inquiry-form" id="inquiry-form">
+            <div class="form-group">
+              <label for="client-name">Full Name *</label>
+              <input type="text" id="client-name" required placeholder="Enter your full name">
+            </div>
+            <div class="form-group">
+              <label for="client-email">Email Address *</label>
+              <input type="email" id="client-email" required placeholder="Enter your email address">
+            </div>
+            <div class="form-group">
+              <label for="client-phone">Phone Number *</label>
+              <input type="tel" id="client-phone" required placeholder="Enter your phone number">
+            </div>
+            <div class="form-group">
+              <label for="inquiry-goal">What are you struggling with? *</label>
+              <select id="inquiry-goal" required>
+                <option value="" disabled selected>Select your priority</option>
+                <option value="collaboration">AI / ML & GenAI Projects</option>
+                <option value="fullstack">Full-Stack Web Development</option>
+                <option value="hiring">Hiring / Recruitment Roles</option>
+                <option value="myfundz">MyFundz Project Details</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="client-msg">Your Message (Optional)</label>
+              <textarea id="client-msg" rows="4" placeholder="How can my technology stack serve you?"></textarea>
+            </div>
+            
+            <button type="submit" class="btn btn-primary btn-full">Get Started Now</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ── -->
+  <footer>
+    <div class="container footer-grid">
+      <div class="footer-col brand-col">
+        <span class="footer-brand">
+          <svg class="footer-logo-svg" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M30 35L15 50L30 65" stroke="#f05423" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M70 35L85 50L70 65" stroke="#f05423" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle cx="50" cy="50" r="10" fill="#ffffff"/>
+          </svg>
+          KRISH<span>.</span>
+        </span>
+        <p class="footer-author-desc">
+          <strong>S MEENATCHI</strong><br>
+          AMFI REGISTERED MUTUAL FUND DISTRIBUTOR<br>
+          ARN-174612
+        </p>
+        <p class="footer-colab">
+          Platform developed by <strong>Krishnan S A</strong>, CS Undergrad & AI Developer.
+        </p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Client Services</h4>
+        <ul>
+          <li><a href="#skills">Portfolio Management Services (PMS)</a></li>
+          <li><a href="#skills">Retirement Planning (NPS & Bonds)</a></li>
+          <li><a href="#skills">Corporate Deposit Allocation</a></li>
+          <li><a href="#projects">Mutual Funds Distribution</a></li>
+          <li><a href="#skills">Life & Health Insurance Advisory</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Pages</h4>
+        <ul>
+          <li><a href="#home">About Me</a></li>
+          <li><a href="#projects">Projects & Calculators</a></li>
+          <li><a href="#skills">Services</a></li>
+          <li><a href="#certificates">Why Choose Us</a></li>
+          <li><a href="#contact">Contact Me</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Let's Connect</h4>
+        <ul>
+          <li>Connect With A Dedicated Developer Today</li>
+          <li>Start Planning Your Custom Product Architecture</li>
+          <li><a href="#contact" class="footer-cta-link">Contact Me →</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>© 2026 KRISHNAN S A. All Rights Reserved. Built with absolute premium quality.</span>
+      <a href="#home" class="footer-top-btn">↑ Top</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
