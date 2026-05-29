@@ -332,7 +332,7 @@ section:nth-child(even) {
   align-items: center;
 }
 
-.hero-tag {
+/*.hero-tag {
   display: inline-block;
   font-family: var(--ff-mono);
   font-size: 0.72rem;
@@ -343,7 +343,7 @@ section:nth-child(even) {
   font-weight: 500;
   letter-spacing: 0.1em;
   margin-bottom: 1.5rem;
-}
+}*/
 
 .hero-heading {
   font-family: var(--ff-head);
@@ -458,6 +458,8 @@ section:nth-child(even) {
 
 .portrait-avatar-svg {
   width: 100%;
+  max-width: 260px;
+  margin: 0 auto;
   height: auto;
   border-radius: 12px;
   display: block;
@@ -1317,4 +1319,18 @@ footer {
   background: var(--orange) !important;
   transform: translateY(-2px);
   box-shadow: 0 8px 20px var(--orange-glow) !important;
+}
+
+/* ── CENTERED CONTACT LAYOUT ── */
+.contact-grid.centered-contact {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  max-width: 550px !important;
+  margin: 0 auto !important;
+}
+
+.contact-grid.centered-contact .contact-left {
+  width: 100% !important;
 }
